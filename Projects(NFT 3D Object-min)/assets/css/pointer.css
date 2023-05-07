@@ -1,0 +1,43 @@
+:root {
+  --size: 3rem;
+  --rounded: 10px;
+  --blueviolet-9: #4E10FF;
+  --blueviolet-8: #AB17DF;
+  --blueviolet-7: #0c0324;
+  --blueviolet-6: #0C032480;
+  --blueviolet-5: #FFFFFF12;
+  --blueviolet-4: #FFFFFF33;
+  --white: #FFFFFF;
+  --darkgray: #FFFFFF99;
+  --orange: #FEAD10;
+}
+
+#mouse-follower {
+  opacity: 1;
+  top: -10px;
+  left: -10px;
+  height: var(--size);
+  width: var(--size);
+  border: 1px solid var(--white);
+  transform: translate(-50%, -50%);
+  border-radius: var(--rounded);
+  position: fixed;
+  transition: 100ms ease-in-out;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+#dot {
+  opacity: 1;
+  top: -10px;
+  left: -10px;
+  height: calc(var(--size) / 2);
+  width: calc(var(--size) / 2);
+  border-radius: var(--rounded);
+  background: var(--blueviolet-8);
+  position: fixed;
+  transform: translate(-50%, -50%);
+  transition: 100ms ease-in-out;
+  pointer-events: none;
+  z-index: 9999;
+}
